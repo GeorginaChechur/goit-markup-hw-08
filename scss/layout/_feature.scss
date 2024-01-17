@@ -1,18 +1,50 @@
 .feature {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .feature-list {
-    display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .feature-item {
-    margin-right: 30px;
-    width: 270px;
 
-    &:last-child {
-        margin-right: 0;
+
+    @media screen and (max-width: 768px) {
+       margin-bottom: 30px;
+       width: 100%;
+
+       &:last-child {
+            margin-bottom: 0;
+       }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc(50% - 15px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
     }
 
     &__title {
@@ -24,6 +56,10 @@
         line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     &__description {
@@ -36,7 +72,6 @@
 }
 
 .feature-box {
-    width: 270px;
     height: 120px;
     border-radius: 4px;
     background: #F5F4FA;
@@ -47,26 +82,4 @@
 
 }
 
-// .feature-item:last-child {
-//     margin-right: 0;
-// }
 
-
-// .feature-item__title {
-//     margin-bottom: 10px;
-//     color: var(--dark-color);
-//     font-family: var(--main-font);
-//     font-size: 14px;
-//     font-weight: 700;
-//     line-height: normal;
-//     letter-spacing: 0.42px;
-//     text-transform: uppercase;
-// }
-
-// .feature-item__description {
-//     color: #757575;
-//     font-family: var(--main-font);
-//     font-size: 14px;
-//     line-height: 1.7em;
-//     letter-spacing: 0.42px;
-// }

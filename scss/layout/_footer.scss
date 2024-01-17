@@ -6,8 +6,28 @@
 }
 
 .footer-box {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+    }
+
+    &__content {
+        text-align: center;
+
+    // @media screen and (min-width: 768px) {
+    //         text-align: center;
+    
+    //     }
+    
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+    }
 }
 
 .footer-logo {
@@ -20,7 +40,11 @@
 }
 
 .join {
-    margin-left: 94px;
+   
+    @media screen and (max-width: 767px) {
+            margin-top: 60px;
+    
+        }
 
     &__title {
         margin-bottom: 20px;
@@ -31,31 +55,24 @@
         line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+                text-align: center;
+        
+            }
+        
+        @media screen and (min-width: 1200px) {
+               text-align: left;
+            }
     }
+
+
+    @media screen and (min-width: 1200px) {
+            margin-left: 94px;
+     }
 }
 
-// .join__title {
-//     margin-bottom: 20px;
-//     color: var(--white-color);
-//     font-family: var(--main-font);
-//     font-size: 14px;
-//     font-weight: 700;
-//     line-height: normal;
-//     letter-spacing: 0.42px;
-//     text-transform: uppercase;
-// }
-
-// .join-item__link {
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     transition-property: background-color;
-//     transition-duration: 0.25s;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
 
 .join-item {
     width: 44px;
@@ -87,17 +104,15 @@
     }
 }
 
-// .join-item__link:hover,
-// .join-item__link:focus {
-//     background-color: var(--accent-cl);
-// }
-
-// .join-item__icon {
-//     fill: var(--white-color);
-// }
 
 .join-list {
     display: flex;
+    @media screen and (max-width: 767px) {
+        
+            align-items: center;
+            justify-content: center;
+    
+        }
 }
 
 .address {
@@ -138,35 +153,48 @@
 
 }
 
-// .address-item:first-child {
-//     margin-bottom: 12px;
-// }
-
-// .address-item__link {
-//     color: rgba(255, 255, 255, 0.60);
-//     font-style: normal;
-//     transition-property: color;
-//     transition-duration: 0.25s;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .address-item__link:hover,
-// .address-item__link:focus {
-//     color: var(--accent-cl);
-// }
 
 .footer-signup {
-    margin-left: auto;
+    margin-top: 60px;
+
+    // @media screen and (min-width: 768px) {
+    //     margin-top: 60px;
+    // }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .footer-signup-form {
     display: flex;
+    gap: 20px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+
+    // @media screen and (min-width: 768px) {
+    //         display: flex;
+    //         gap: 20px;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         justify-content: center;
+    
+    //     }
+
+    
+    @media screen and (min-width: 1200px) {
+            // display: flex;
+            flex-direction: row;
+            // align-items: center;
+            // justify-content: center;
+            gap: 12px;
+        }
+  
 }
 
 .signup-text {
+
     display: block;
     margin-bottom: 20px;
     color: var(--white-color);
@@ -176,6 +204,18 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    text-align: center;
+
+
+
+    // @media screen and (min-width: 768px) {
+    //        text-align: center; 
+    
+    //     }
+    
+    @media screen and (min-width: 1200px) {
+           text-align: left;
+        }
 }
 
 .signup-input {
@@ -186,6 +226,11 @@
     padding: 15px 0 15px 16px;
     width: 358px;
     color: var(--white-color);
+
+    @media screen and (max-width: 767px) {
+            width: 100%;
+    
+        }
 }
 
 .signup-btn {
@@ -212,8 +257,3 @@
     
     }
 }
-
-// .signup-btn__icon {
-//     fill: var(--white-color);
-
-// }

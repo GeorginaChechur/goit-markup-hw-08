@@ -1,3 +1,4 @@
+
 .about {
     padding-bottom: 94px;
 
@@ -10,18 +11,11 @@
     &__title {
         margin-bottom: 50px;
     }
+
+     @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
-
-// .about__list {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-
-// }
-
-// .about__title {
-//     margin-bottom: 50px;
-// }
 
 .about-item {
     margin-right: 30px;
@@ -53,33 +47,7 @@
 
 }
 
-// .about-item__desctiption {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 70px;
-//     background: rgba(47, 48, 58, 0.80);
-//     color: var(--white-color);
-//     text-align: center;
-//     font-family: var(--main-font);
-//     font-size: 14px;
-//     font-weight: 700;
-//     line-height: normal;
-//     letter-spacing: 0.42px;
-//     text-transform: uppercase;
-// }
-
-
-// .about-item:last-child {
-//     margin-right: 0;
-// }
-
-.about__title,
-.team__title {
+.about__title {
     color: var(--dark-color);
     text-align: center;
     font-family: var(--main-font);
@@ -88,3 +56,4 @@
     line-height: normal;
     letter-spacing: 1.08px;
 }
+

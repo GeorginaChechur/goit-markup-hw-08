@@ -46,6 +46,82 @@
               <a class="link navigation-item__menu" href="#">Контакти</a>
             </li>
           </ul>
+          <!-- burger -->
+          <button
+            class="brg-menu-btn"
+            type="button"
+            aria-controls="brg-content"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="icon-close"
+                href="./icons/brg_close.svg#icon-brg_close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./icons/brg_menu.svg#icon-brg_menu"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="brg-content" id="brg-content" data-menu>
+            <div class="brg-box">
+              <ul class="brg-list">
+                <li class="brg-item">
+                  <a class="link brg-item__menu current" href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="brg-item">
+                  <a class="link brg-item__menu" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="brg-item">
+                  <a class="link brg-item__menu" href="#">Контакти</a>
+                </li>
+              </ul>
+
+              <ul class="brg-contacts-list">
+                <li class="brg-contacts-item">
+                  <a
+                    class="link brg-contacts-item__tel"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="brg-contacts-item">
+                  <a
+                    class="link brg-contacts-item__mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="brg-social-list">
+                <li class="brg-social-item">
+                  <a class="link brg-social-item__link" href="">Instagram</a>
+                </li>
+                <li class="brg-social-item">
+                  <a class="link brg-social-item__link" href="">Twitter</a>
+                </li>
+                <li class="brg-social-item">
+                  <a class="link brg-social-item__link" href="">Facebook</a>
+                </li>
+                <li class="brg-social-item">
+                  <a class="link brg-social-item__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
 
         <ul class="contacts-list">
@@ -62,7 +138,7 @@
           </li>
           <li class="contacts-item">
             <a class="link contacts-menu" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="17">
+              <svg class="contacts-item__icon" width="10" height="17">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -260,9 +336,8 @@
                 class="member-item__img"
                 src="./images/team/img-1.jpg"
                 alt=""
-                width="270"
-                height="260"
               />
+
               <div class="member-item__group">
                 <h3 class="member-item__title">Ігор Дем'яненко</h3>
                 <p class="member-item__position">Product Designer</p>
@@ -309,9 +384,8 @@
                 class="member-item__img"
                 src="./images/team/img-2.jpg"
                 alt=""
-                width="270"
-                height="260"
               />
+
               <div class="member-item__group">
                 <h3 class="member-item__title">Ольга Рєпіна</h3>
                 <p class="member-item__position">Frontend Developer</p>
@@ -358,8 +432,6 @@
                 class="member-item__img"
                 src="./images/team/img-3.jpg"
                 alt=""
-                width="270"
-                height="260"
               />
               <div class="member-item__group">
                 <h3 class="member-item__title">Микола Тарасов</h3>
@@ -407,8 +479,6 @@
                 class="member-item__img"
                 src="./images/team/img-4.jpg"
                 alt=""
-                width="270"
-                height="260"
               />
               <div class="member-item__group">
                 <h3 class="member-item__title">Михайло Єрмаков</h3>
@@ -584,5 +654,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
