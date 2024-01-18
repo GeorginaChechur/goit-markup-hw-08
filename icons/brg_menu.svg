@@ -1,5 +1,6 @@
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="icon-brg_menu">
-<path id="icon/navigation/menu_24px" fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/>
+<!-- <path id="icon/navigation/menu_24px" fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/> -->
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
 </g>
 </svg>

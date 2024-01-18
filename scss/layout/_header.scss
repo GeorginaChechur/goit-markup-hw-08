@@ -15,6 +15,8 @@
     @media screen and (max-width: 767px) {
         margin-top: 16px;
         margin-bottom: 16px;
+        font-size: 24px;
+        letter-spacing: 0.72px;
 
     }
 
@@ -195,10 +197,6 @@
 }
 
 
-
-
-
-
 .brg-menu-btn {
     margin: 0;
     padding: 0;
@@ -211,19 +209,26 @@
 
 
     &.is-open {
-        position: relative;
+        position: fixed;
         z-index: 2;
+        top: 10px;
+        right: 15px;
 
     }
 }
 
-
-
-.icon-close {
+.icon-close ,
+.icon-menu {
     &:hover,
     &:focus {
     fill: var(--accent-cl);
     }
+}
+.icon-close,
+.icon-menu {
+transition-property: fill;
+transition-duration: 0.25s;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .brg-menu-btn .icon-close {
@@ -237,6 +242,10 @@
     color: #2196F3;
 
 
+}
+
+.brg-item__menu.current {
+    color: var(--accent-cl);
 }
 
 .brg-menu-btn.is-open .icon-menu {
@@ -256,7 +265,7 @@
     top: 0;
     left: 100%;
     padding: 48px 40px;
-    position: absolute;
+    position: fixed;
     transition: all .3s ease;
     width: 100%;
     height: 100%;

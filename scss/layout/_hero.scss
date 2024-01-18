@@ -41,8 +41,10 @@
 
     background-repeat: no-repeat;
     background-position: 50% 50%;
-
+@media screen and (max-width:1200px) {
     background-size: cover;
+}
+   
 
     @media screen and (max-width: 1199px) {
             padding-top: 118px;
@@ -55,6 +57,8 @@
         }
 
     &__title {
+
+
         margin: auto;
         margin-bottom: 30px;
         color: var(--white-color);
@@ -62,9 +66,16 @@
         font-family: var(--main-font);
         font-weight: 900;
         text-transform: uppercase;
+        
+        @media screen and (max-width: 479px) {
+            // font-size: 26px;
+            // letter-spacing: 1.56px;
+            // line-height: 1.61em;
+            width: 100%;
+        }
+        
 
-
-        @media screen and (max-width: 1199px) {
+        @media screen and (min-width: 480px) {
             font-size: 26px;
             letter-spacing: 1.56px;
             line-height: 1.61em;
