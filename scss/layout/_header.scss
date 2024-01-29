@@ -46,6 +46,7 @@
 .header-container {
     display: flex;
     align-items: center;
+    position: relative;
 
     @media screen and (max-width: 767px) {
             justify-content: space-between;
@@ -198,10 +199,22 @@
 
 
 .brg-menu-btn {
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
     border: none;
     background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    &:hover,
+    &:focus {
+            fill: var(--accent-cl);
+        }
+
+    transition-property: fill;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
            display: none;
@@ -217,19 +230,6 @@
     }
 }
 
-.icon-close ,
-.icon-menu {
-    &:hover,
-    &:focus {
-    fill: var(--accent-cl);
-    }
-}
-.icon-close,
-.icon-menu {
-transition-property: fill;
-transition-duration: 0.25s;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .brg-menu-btn .icon-close {
     display: none;
@@ -318,6 +318,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.68px;
+
+    @media screen and (max-width:480px) {
+    font-size: 26px;
+    }
 }
 
 .brg-contacts-item__mail {
@@ -356,6 +360,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.36px;
+
+    @media screen and (max-width:480px) {
+            font-size: 12px;
+            
+        }
 
     // margin-right: 10px;
 
