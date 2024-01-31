@@ -116,7 +116,7 @@
     
     
     @media screen and (max-width: 768px) {
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             width: 100%;
     
             &:last-child {
@@ -172,6 +172,11 @@
         line-height: 28px;
         letter-spacing: 0.54px;
         padding: 63px 24px;
+
+        @media screen and (max-width: 380px) {
+            padding: 20px 10px;
+            line-height: 20px;
+        }
     }
 
 

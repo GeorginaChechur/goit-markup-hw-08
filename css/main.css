@@ -434,44 +434,46 @@ img {
 }
 
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
 }
 @media screen and (max-width: 767px) {
   .hero {
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url("../images/bg/hero-bg_sm.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/hero-bg_sm.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg_sm.jpg");
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url("../images/bg/hero-bg_sm@2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/hero-bg_sm@2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg_sm@2.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url("../images/bg/hero-bg_md.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/hero-bg_md.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg_md.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url("../images/bg/hero-bg_md@2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/hero-bg_md@2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg_md@2.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url("../images/bg/hero-bg_lg.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/hero-bg_lg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg_lg.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url("../images/bg/hero-bg_lg@2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg/hero-bg_lg@2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/hero-bg_lg@2.jpg");
   }
 }
 @media screen and (max-width: 1200px) {
@@ -597,6 +599,8 @@ img {
 @media screen and (max-width: 479px) {
   .modal-wrapper {
     width: 90%;
+    max-height: 90vh;
+    overflow: auto;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1342,7 +1346,6 @@ img {
 
 @media screen and (max-width: 768px) {
   .content-item {
-    margin-bottom: 30px;
     width: 100%;
   }
   .content-item:last-child {
@@ -1401,6 +1404,12 @@ img {
   line-height: 28px;
   letter-spacing: 0.54px;
   padding: 63px 24px;
+}
+@media screen and (max-width: 380px) {
+  .content-item__text {
+    padding: 20px 10px;
+    line-height: 20px;
+  }
 }
 .content-item__description {
   padding: 20px 24px;
